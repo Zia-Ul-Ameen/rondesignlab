@@ -1,0 +1,24 @@
+.parallax {
+    width: 100%;
+    height: 100%;
+}
+
+.bg1Hover {
+    border-radius: 20px;
+    margin-top: 5rem;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+@media (max-width: 800px) {
+    .parallax {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bg1Hover {
+        width: 90%;
+        transition: 1s;
+    }
+}

@@ -1,0 +1,38 @@
+.wrapper {
+    width: 100%;
+    height: 70vh;
+    padding-top: 25%;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    position: relative;
+}
+
+.para1 {
+    font-size: 95px;
+    font-weight: 700;
+    transition: 1.5s;
+}
+
+.para2 {
+    font-size: 25px;
+    opacity: .8;
+    position: absolute;
+    top: 55%;
+    right: 0%;
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        padding-top: 10%;
+    }
+
+    .para1 {
+        font-size: 150px;
+    }
+
+    .para2 {
+        font-size: 35px;
+        top: 70%;
+        right: 5%;
+    }
+}

@@ -1,0 +1,46 @@
+.section2 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+}
+
+.zoomOut2 {
+    font-size: 55px;
+    font-weight: 600;
+    white-space: nowrap; /* Use white-space instead of text-wrap */
+    text-align: center;
+    transition: all 1s;
+}
+
+.parallaxP2 {
+    font-size: 18px;
+}
+
+@media (min-width: 800px) {
+    .section2 {
+        height: 100vh;
+    }
+
+    .zoomOut2 {
+        font-size: 120px;
+        margin-top: 5rem; /* Move margin-top here for consistency */
+    }
+
+    .parallaxP2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .zoomOut2 {
+        font-size: 45px;
+    }
+
+    .parallaxP2 {
+        font-size: 15px;
+    }
+}

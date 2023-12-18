@@ -1,0 +1,189 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    font-family: 'poppins', sans-serif;
+}
+.top{ 
+    padding-top: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: top;
+}
+.paraTop{
+    width: 40%;
+    font-size: 30px;
+    opacity: .8;
+}
+.buttonWrapper{
+    width: 60%;
+    height: 100%;
+}
+.buttonTop{
+    padding-left: 2rem;
+    transition: 1s;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 2rem 4rem;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: white;
+}
+.buttonTop:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.bottom{
+width: 100%;
+display: flex;
+padding-top: 17rem;
+gap: 10rem;
+}
+.bottomLeft{
+   width: 45%;
+}
+.bottomPara{
+    font-size: 17px;
+    opacity: .8;
+}
+.bottomButton{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgb(234, 234, 234);
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 1s;
+}
+.bottomButton:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+.bottomRight{
+    width: 55%;
+    padding-top: 2rem;
+}
+.originalLogo{
+    font-size: 18px;
+    opacity: .7;
+}
+.unorderedList{
+    display: flex;
+    gap: 2.5rem;
+    padding-top: 2rem;
+}
+.li1, .li2, .li3, .li4{
+    font-weight: 500;
+    opacity: .7;
+    position: relative;
+}
+.after1, .after2, .after3, .after4{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    border-radius: 30px;
+    opacity: .7;
+}
+.li1:hover .after1{
+    width: 4.5rem;
+}
+.li2:hover .after2{
+    width: 7rem;
+}
+.li3:hover .after3{
+    width: 7rem;
+}
+.li4:hover .after4{
+    width: 7.5rem;
+}
+
+@media (max-width: 800px){
+    .wrapper{
+        height: 46vh;
+    }
+    .top{ 
+        padding-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: top;
+    }
+    .paraTop{
+        width: 100%;
+        font-size: 28px;
+    }
+    .buttonWrapper{
+        width: 100%;
+    }
+    .buttonTop{
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .bottom{
+        height: 100%;
+        flex-direction: column;
+        padding-top: 3rem;
+        gap: 2rem;
+        }
+        .bottomLeft{
+           width: 100%;
+        }
+        .bottomRight{
+            width: 100%;
+            padding-top: 1rem;
+        }
+        .unorderedList{
+            display: flex;
+            padding-top: 1rem;
+        }
+        .li1, .li2, .li3, .li4{
+            font-size: 12px;
+            font-weight: 500;
+            opacity: .7;
+            position: relative;
+        }
+        .li1:hover .after1{
+            width: 3.2rem;
+        }
+        .li2:hover .after2{
+            width: 5.3rem;
+        }
+        .li3:hover .after3{
+            width: 5rem;
+        }
+        .li4:hover .after4{
+            width: 5rem;
+        }
+}
+
+
+@media (max-width: 500px){
+    .wrapper{
+        height: 45vh;
+    }
+    .li1, .li2, .li3, .li4{
+        font-size: 8px;
+        font-weight: 600;
+        opacity: .7;
+        position: relative;
+    }
+    .li1:hover .after1{
+        width: 2.2rem;
+    }
+    .li2:hover .after2{
+        width: 3.7rem;
+    }
+    .li3:hover .after3{
+        width: 3.5rem;
+    }
+    .li4:hover .after4{
+        width: 3.5rem;
+    }
+}

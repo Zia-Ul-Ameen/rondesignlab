@@ -1,0 +1,141 @@
+.wrapper {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'poppins', sans-serif;
+}
+
+.bgImage,
+.restBgImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.restBgImage {
+    margin-top: 5rem;
+}
+
+.title,
+.title2 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.title2 {
+    width: 90%;
+    margin-top: 4rem;
+}
+
+.text {
+    margin: 1rem 0;
+    font-size: 25px;
+}
+
+.mulletWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mullets {
+    font-size: 18px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.804);
+    border-radius: 35px;
+    margin: 0.4rem;
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        font-family: 'poppins', sans-serif;
+        position: relative;
+    }
+
+    .imageLoop {
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 2%;
+    }
+
+    .bgImage {
+        height: 100%;
+        width: 70%;
+        padding: 5rem 0;
+        border-radius: 20%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .restImage {
+        display: none;
+    }
+
+    .contentWrap {
+        width: 60%;
+        height: 100%;
+        padding-left: 15%;
+    }
+
+    .content1,
+    .content2 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .title {
+        width: 20%;
+        margin-top: 8rem;
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .text {
+        margin: 4.5rem 0;
+        font-size: 25px;
+    }
+
+    .bolder {
+        font-weight: 600;
+    }
+
+    .mulletWrapper {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mullets {
+        font-size: 20px;
+        padding: 1.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.804);
+        border-radius: 35px;
+        margin: 0.4rem;
+    }
+
+    .title2 {
+        width: 70%;
+        margin-top: 8rem;
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        margin-top: 0;
+    }
+}

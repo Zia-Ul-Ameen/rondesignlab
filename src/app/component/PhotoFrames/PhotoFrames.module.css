@@ -1,0 +1,185 @@
+.wrapper,
+.texts {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5rem; /* Moved margin-top to .wrapper for consistency */
+}
+
+.texts {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+.p1 {
+    font-size: 41px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 35%;
+    font-weight: 600;
+    transition: padding-top 1s;
+}
+
+.pWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.p2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.p3 {
+    font-size: 20px;
+    width: 70%;
+    opacity: 0.7;
+}
+
+.p4 {
+    margin-top: 1rem;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.images {
+    width: 100%;
+    height: 300vh;
+    margin-top: -100vh;
+    margin-bottom: 1rem;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6,
+.image7 {
+    width: 15vh;
+    height: 22vh;
+    object-fit: cover;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.image1 {
+    top: 0;
+    z-index: 1;
+}
+
+.image2 {
+    top: 20%;
+    right: 2%;
+}
+
+.image3 {
+    top: 45%;
+    right: 25%;
+    background-color: lightpink;
+}
+
+.image4 {
+    bottom: 0;
+    background-color: lightskyblue;
+}
+
+.image5 {
+    bottom: 3%;
+    right: 0;
+    background-color: lightskyblue;
+}
+
+.image6 {
+    top: 30%;
+    left: 1%;
+    background-color: rgb(135, 250, 231);
+}
+
+.image7 {
+    top: 65%;
+    left: 25%;
+    background-color: rgb(240, 135, 250);
+}
+
+@media (min-width: 800px) {
+    .wrapper {
+        margin-top: 20%;
+    }
+
+    .p1 {
+        font-size: 61px;
+        width: 80%;
+        padding-top: 7%;
+        transition: padding-top 1s;
+    }
+
+    .p2 {
+        font-size: 100px;
+    }
+
+    .p3 {
+        font-size: 25px;
+        width: 50%;
+        opacity: 0.7;
+    }
+
+    .p4 {
+        font-size: 50px;
+    }
+
+    .images {
+        height: 300vh;
+        margin-top: -100vh;
+        margin-bottom: 1rem;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6,
+    .image7 {
+        width: 10vw;
+        height: 30vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6,
+    .image7 {
+        width: 25vw;
+        height: 15vh;
+    }
+
+    .p1 {
+        padding-top: 10rem;
+    }
+
+    .p2,
+    .p3,
+    .p4 {
+        padding-top: 0rem;
+    }
+
+    .p3 {
+        padding-top: 1rem;
+    }
+}

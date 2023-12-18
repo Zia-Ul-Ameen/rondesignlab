@@ -1,0 +1,82 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+}
+.cardWrapper{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+}
+.qrWrapper{
+    width: 27%;
+    height: 100%;
+}
+.qrCode{
+    width: 100%;
+    height: 100%;
+    padding: 3rem 3rem 3rem 2rem;
+}
+.paraWrapper{
+    width: 70%;
+    padding-left: 2rem;
+}
+.p1{
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.p2{
+    font-size: 35px;
+    font-weight: 300;
+    opacity: .8;
+}
+@media( max-width: 800px){
+    .wrapper{
+        height: 40vh;
+    }
+      
+    .cardWrapper{
+        height: 75%;
+    }
+    .qrWrapper{
+        width: 47%;
+        height: 100%;
+    }
+    .paraWrapper{
+        width: 53%;
+        padding-left: 0;
+        
+    }
+    .p1{
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+    }
+    .p2{
+        font-size: 15px;
+        font-weight: 300;
+        opacity: .8;
+    }
+}
+
+
+@media(max-width:500px){
+    .wrapper{
+        height: 30vh;
+    }
+    .p1{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .p2{
+        font-size: 10px;
+        font-weight: 300;
+        opacity: .8;
+    }
+
+}

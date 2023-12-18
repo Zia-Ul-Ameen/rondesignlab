@@ -1,0 +1,126 @@
+
+.list{
+    position: relative;
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.ul1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.li1, .li2, .li3, .li4, .li5{
+    font-size: 30px;
+    position: relative;
+    width: 40%;
+}
+.after1, .after2, .after3, .after4, .after5{
+    content: '';
+    width: 0rem;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    border-radius: 30px;
+}
+
+.li1:hover .after1{
+    width: 11rem;
+}
+.li2:hover .after2{
+    width: 6.5rem;
+}
+.li3:hover .after3{
+    width: 10rem;
+}
+.li4:hover .after4{
+    width: 6.5rem;
+}
+.li5:hover .after5{
+    width: 8rem;
+}
+
+.ul2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.li21, .li22, .li23, .li24, .li25{
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    width: 40%;
+}
+.after21, .after22, .after23, .after24, .after25{
+    content: '';
+    width: 0rem;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+    border-radius: 30px;
+}
+.li21:hover .after21{
+    width: 5.5rem;
+}
+.li22:hover .after22{
+    width: 11.5rem;
+}
+.li23:hover .after23{
+    width: 8rem;
+}
+.li24:hover .after24{
+    width: 5.5rem;
+}
+
+@media(max-width: 800px){
+    .list{
+        height: 50vh;
+    }
+    .li1, .li2, .li3, .li4, .li5{
+        font-size: 17px;
+        width: 50%;
+    }
+    .li21, .li22, .li23, .li24, .li25{
+        font-size: 23px;
+        font-weight: 500;
+        width: 50%;
+    }
+    .li1:hover .after1{
+        width: 6.4rem;
+    }
+    .li2:hover .after2{
+        width: 3.6rem;
+    }
+    .li3:hover .after3{
+        width: 5.6rem;
+    }
+    .li4:hover .after4{
+        width: 3.7rem;
+    }
+    .li5:hover .after5{
+        width: 4.7rem;
+    }
+
+    .li21:hover .after21{
+        width: 3.2rem;
+    }
+    .li22:hover .after22{
+        width: 6.4rem;
+    }
+    .li23:hover .after23{
+        width: 4.5rem;
+    }
+    .li24:hover .after24{
+        width: 3.2rem;
+    }
+}
